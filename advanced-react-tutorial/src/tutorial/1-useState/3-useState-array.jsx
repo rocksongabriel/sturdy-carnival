@@ -4,13 +4,18 @@ import { data } from "../../data";
 
 const UseStateArray = () => {
   const [people, setPeople] = useState(data);
-  console.log(people)
+  
+  const removeItem = (id) => {
+    let newPeople = people.filter((person) => person.id !== id)
+    setPeople(newPeople);
+  }
 
   return <>
     {
       people.map((person) => {
         return <div className="item" key={person.id}>
           <h4>{person.name}</h4>
+          <button onClick={() => removeItem(person.id)}>remove</button>
         </div>
       })
     }
