@@ -1,10 +1,14 @@
 import React from "react";
 
+// import components
+// import ErrorExample from "./tutorial/1-useState/1-error-example";
+import UseStateBasics from "./tutorial/1-useState/2-useState-basics"
+
 
 const App = () => {
   return (
-    <div>
-      <h1>Advanced React Tutorial</h1>
+    <div className="container">
+      <UseStateBasics />
     </div>
   )
 }
