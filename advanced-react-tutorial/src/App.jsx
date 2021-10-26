@@ -1,14 +1,14 @@
 import React from "react";
 
 // import components
-import UseEffectBasics from "./tutorial/2-useEffect/1-useEffect-basics";
+import UseEffectCleanup from "./tutorial/2-useEffect/2-useEffect-cleanup";
 
 
 
 const App = () => {
   return (
     <div className="container">
-      <UseEffectBasics />
+      <UseEffectCleanup />
     </div>
   )
 }
