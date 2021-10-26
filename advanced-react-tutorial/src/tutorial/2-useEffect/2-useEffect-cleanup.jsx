@@ -14,7 +14,7 @@ const UseEffectCleanup = () => {
     return () => {
       window.removeEventListener('resize', changeWindowHeight);
     }
-  }, [windowHeight])
+  }, [windowHeight]);
 
   return <>
     <h1>useEffect Cleanup</h1>
